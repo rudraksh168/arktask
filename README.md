@@ -31,7 +31,7 @@ Raw Video
 Instead of a single reference frame (fragile) or a running average (slow to converge), we sample **30 evenly-spaced frames** across the entire video and compute a **per-pixel, per-channel median**:
 
 $$
-B(x, y, c) = \text{median}\bigl\{ f_1(x,y,c),\; f_2(x,y,c),\; \ldots,\; f_{30}(x,y,c) \bigl\}
+B(x, y, c) = \text{median}\Bigl\{ f_1(x,y,c),\; f_2(x,y,c),\; \ldots,\; f_{30}(x,y,c) \Bigr\}
 $$
 
 where $c \in \{B, G, R\}$ and $f_i$ is the $i$-th sampled frame.
